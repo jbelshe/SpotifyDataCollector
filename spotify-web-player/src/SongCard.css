@@ -1,0 +1,32 @@
+.container {
+    position: relative; /* Allows absolute positioning of children */
+    width: fit-content; /* Makes the div size just fit the content */
+    height: fit-content; /* Makes the div size adjust to content */
+}
+
+
+.container img {
+    position: absolute;
+    width: 400px;
+    /* Set the image width to 400px */
+    height: auto;
+    /* Maintain aspect ratio */
+    z-index: -1;
+}
+
+audio {
+    position: relative;
+    /* Position the audio controls over the image */
+    top: 50%;
+    /* Center the audio vertically */
+    left: 50%;
+    /* Center the audio horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for exact centering */
+    z-index: 10;
+    /* Make sure the audio controls appear on top */
+}
+
+.GetNewSong {
+    position: relative;
+}

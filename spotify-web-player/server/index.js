@@ -35,7 +35,7 @@ var generateRandomString = function (length) {
     return text;
 };
 
-
+// TODO:  Auto renew token
 
 // User approves access for scope requests on spotify account
 // Once approved, forwarded to /auth/callback
@@ -176,7 +176,7 @@ app.get('/song/random', (req, res) => {
                         song_url: data['external_urls']['spotify']
                     };
                     console.log(song_data);
-                    res.send(song_data);
+                    res.status(200).send(song_data);
                 }
                 catch (error) {
                     console.log("Error parsing JSON:", error)
