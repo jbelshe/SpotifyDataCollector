@@ -19,8 +19,6 @@ const GetNewSong = ({onDataReceived}) => {
 
     return (
         <div>
-            <h1>Generate A New Song</h1>
-            <img></img>
             <button onClick={handleButtonClick}>Press Me!</button>
         </div>
     );

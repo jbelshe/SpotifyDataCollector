@@ -6,27 +6,27 @@
 
 
 .container img {
-    position: absolute;
-    width: 400px;
-    /* Set the image width to 400px */
-    height: auto;
-    /* Maintain aspect ratio */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
     z-index: -1;
 }
 
+.blurred {
+    filter:blur(10px);
+}
+
+
 audio {
     position: relative;
-    /* Position the audio controls over the image */
-    top: 50%;
-    /* Center the audio vertically */
-    left: 50%;
-    /* Center the audio horizontally */
-    transform: translate(-50%, -50%);
-    /* Adjust for exact centering */
-    z-index: 10;
-    /* Make sure the audio controls appear on top */
+    width: 90%;
+    height: 20px;
 }
 
 .GetNewSong {
     position: relative;
+}
+
+.overlay {
+    z-index: 2; /* Ensure it's above the image */
 }
