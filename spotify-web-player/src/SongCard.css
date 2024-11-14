@@ -10,10 +10,15 @@
     height: 100%;
     object-fit: cover; 
     z-index: -1;
+    transition: filter 0.3s ease-in-out;
 }
 
 .blurred {
-    filter:blur(10px);
+    filter:blur(20px);
+}
+
+.clear {
+    filter:blur(0px);
 }
 
 
@@ -27,6 +32,8 @@ audio {
     position: relative;
 }
 
-.overlay {
+
+.audio-container {
+    bottom: 5px;
     z-index: 2; /* Ensure it's above the image */
 }
